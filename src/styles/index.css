@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  @apply bg-gray-100 text-gray-900 font-sans leading-relaxed;
+}
+
+/* Navigation Bar */
+nav {
+  @apply bg-gradient-to-r from-blue-700 to-purple-800 p-6 shadow-lg sticky top-0 z-50;
+}
+
+nav h1 {
+  @apply text-white text-4xl font-extrabold tracking-wide;
+}
+
+nav .nav-links {
+  @apply flex space-x-12; /* ✅ Added spacing between buttons */
+}
+
+nav a {
+  @apply text-white hover:text-yellow-300 text-lg font-semibold transition duration-300;
+}
+
+/* Hero Section */
+header {
+  @apply bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-center py-20 shadow-xl;
+}
+
+header h2 {
+  @apply text-5xl font-bold drop-shadow-lg;
+}
+
+header p {
+  @apply text-xl mt-4 opacity-90 drop-shadow-md;
+}
+
+/* Main Content */
+main {
+  @apply container mx-auto p-10 flex-grow bg-white shadow-2xl rounded-xl mt-6 border border-gray-300;
+}
+
+/* Buttons */
+button {
+  @apply rounded-lg px-6 py-3 font-semibold transition-all duration-300;
+}
+
+button:hover {
+  @apply opacity-80 transform scale-105;
+}
+
+/* Footer */
+footer {
+  @apply bg-gray-900 text-white p-6 text-center mt-auto shadow-inner border-t-2 border-gray-700;
+}
+
+footer p {
+  @apply text-gray-400 text-lg;
+}
